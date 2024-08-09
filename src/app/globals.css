@@ -95,3 +95,8 @@ h3 {
 }
 
 
+.container2{
+	display: "display";
+	flex-direction: row;
+}
+
