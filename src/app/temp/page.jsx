@@ -6,10 +6,10 @@ export default function Temp(){
         <div className="containerGlobal"> 
             <h1>Telas do sistema</h1>
 
-            <Link href="/" className="{styles.linkTemp">Home</Link>
-            <Link href="/sobre" className="{styles.linkTemp">Cadastro</Link>
-            <Link href="/usuarios/cadastro" className="{styles.linkTemp">Cadastro</Link>
-            <Link href="/usuarios/login" className="{styles.linkTemp">Login</Link>
+            <Link href="/" className={styles.linkTemp}>Home</Link>
+            <Link href="/sobre" className={styles.linkTemp}>Cadastro</Link>
+            <Link href="/usuarios/cadastro" className={styles.linkTemp}>Cadastro</Link>
+            <Link href="/usuarios/login" className={styles.linkTemp}>Login</Link>
         </div>
     )
 }
