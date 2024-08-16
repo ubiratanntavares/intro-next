@@ -2,7 +2,7 @@
 import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin"] });
-
+import Cabeçalho from "@/componentes/cabecalho";
 import Rodape from "@/componentes/rodape";
 
 
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body /*className={inter.className}*/>
+      <Cabeçalho/>
       {children}
       <Rodape/></body>
     </html>

@@ -12,19 +12,21 @@ export default function Home() {
 
       <Image
         src="/sk8.jpg"
+        width={2048}
+        height={1364}
+        alt="Picture of the author"
+        className={styles.imagemHomePage}
+      />
+
+      <Image
+        src="/sk8.jpg"
         width={50}
         height={50}
         alt="Picture of the author"
         className={styles.imagemHomePage}
         
       />
-      <Image
-        src="/sk8.jpg"
-        width={2048}
-        height={1364}
-        alt="Picture of the author"
-        className={styles.imagemHomePage}
-      />
+      
     </div>
     </div>
   );
