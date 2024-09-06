@@ -1,33 +1,26 @@
-import Image from "next/image";
+import { MdLunchDining, MdLocalBar, MdDining, MdIcecream, MdFastfood } from 'react-icons/md';
+
 import styles from "./page.module.css";
+
+
+import Slider from "@/componentes/slider";
+import ProdutosHome from "@/componentes/produtos/produtosHome";
 
 export default function Home() {
   return (
     <div className="containerGlobal">
-      <h1 className={styles.tituloHomePage}>Aula Next JS</h1>
-      <h2>Exemplo h2</h2>
-      <h3>Exemplo h3</h3>
-      <p>Texto parágrafo</p>
-      <div className={styles.container2}>
+      <Slider />
 
-      <Image
-        src="/sk8.jpg"
-        width={2048}
-        height={1364}
-        alt="Picture of the author"
-        className={styles.imagemHomePage}
-      />
+      <div className={styles.tipos}>
+        <MdLunchDining className={styles.tpicon} />
+        <MdLocalBar className={styles.tpicon} />
+        <MdDining className={styles.tpicon} />
+        <MdIcecream className={styles.tpicon} />
+        <MdFastfood className={styles.tpicon} />
+      </div>
 
-      <Image
-        src="/sk8.jpg"
-        width={50}
-        height={50}
-        alt="Picture of the author"
-        className={styles.imagemHomePage}
-        
-      />
-      
-    </div>
+      <ProdutosHome />
+
     </div>
   );
 }
